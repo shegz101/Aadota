@@ -43,7 +43,7 @@ const ThanksPage: React.FC = () => {
       </div>
 
       {/* Background Image Container with Extended Gradient */}
-      <div className="absolute -bottom-10 left-0 right-0 w-full h-[60vh]">
+      <div className="absolute -bottom-12 left-0 right-0 w-full h-[60vh]">
         {/* Extended Gradient Overlay */}
         <div className="absolute -top-20 inset-x-0 bottom-0 bg-gradient-to-b from-[#0d0f36] via-[#0d0f36]/70 to-transparent z-10"></div>
         

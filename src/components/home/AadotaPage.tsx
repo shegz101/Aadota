@@ -1,12 +1,14 @@
 import Aadota from '../../assets/Àádọ́ta.png';
-import bg from "../../assets/bg.png";
+import bg from "../../assets/newbg - Copy.png";
+import grain from '../../assets/grainBg - Copy.png'
 import { Link } from "react-router";
 
 const AadotaPage: React.FC = () => {
   return (
-    <div className="relative h-screen overflow-hidden bg-[#0d0f36] pt-12">
+    <div className="relative h-screen overflow-hidden bg-[#0d0f36]">
+      <img src={grain} alt="" className='h-[100vh] relative z-20 opacity-20'/>
       {/* Main Content */}
-      <div className="relative z-20 flex flex-col h-full">
+      <div className="z-30 flex flex-col h-full pt-12">
         <div className="text-center px-5 mt-12">
           <h1 className="mx-auto">
             <img src={Aadota} alt="Logo" className="w-full h-auto" />
@@ -29,7 +31,8 @@ const AadotaPage: React.FC = () => {
       {/* Background Image Container with Extended Gradient */}
       <div className="absolute -bottom-10 left-0 right-0 w-full h-[60vh]">
         {/* Extended Gradient Overlay */}
-        <div className="absolute -top-20 inset-x-0 bottom-0 bg-gradient-to-b from-[#0d0f36] via-[#0d0f36]/70 to-transparent z-10"></div>
+        {/* <div className="absolute -top-20 inset-x-0 bottom-0 bg-gradient-to-b from-[#0d0f36] via-[#0d0f36]/70 to-transparent z-10"></div> */}
+        
         
         {/* Background Image */}
         <img 
