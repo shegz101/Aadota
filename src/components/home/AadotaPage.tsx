@@ -1,12 +1,12 @@
 import Aadota from '../../assets/Àádọ́ta.png';
 import bg from "../../assets/newbg - Copy.png";
-import grain from '../../assets/grainBg - Copy.png'
+// import grain from '../../assets/grainBg - Copy.png'
 import { Link } from "react-router";
 
 const AadotaPage: React.FC = () => {
   return (
     <div className="relative h-screen overflow-hidden bg-[#0d0f36]">
-      <img src={grain} alt="" className='h-[100vh] relative z-20 opacity-20'/>
+      
       {/* Main Content */}
       <div className="z-30 flex flex-col h-full pt-12">
         <div className="text-center px-5 mt-12">
