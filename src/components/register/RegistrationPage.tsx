@@ -42,7 +42,7 @@ const RegistrationPage: React.FC = () => {
                 Your Full Name
               </label>
               <input
-                placeholder="Jane Doe"
+                placeholder="John Doe"
                 className="rounded-full mt-1 h-[45px] w-full border-[#F8F1E8] text-[#F8F1E8] border-2 px-2 bg-inherit outline-none"
               />
             </div>
@@ -53,6 +53,7 @@ const RegistrationPage: React.FC = () => {
               </label>
               <input
                 placeholder="janedoe@gmail.com"
+                type="email"
                 className="rounded-full mt-1 h-[45px] w-full border-[#F8F1E8] text-[#F8F1E8] border-2 px-2 bg-inherit outline-none"
               />
             </div>
@@ -88,6 +89,16 @@ const RegistrationPage: React.FC = () => {
                   ))}
                 </ul>
               )}
+            </div>
+
+            <div>
+              <label className="text-[#F8F1E8] text-sm font-semibold">
+                Name of the person you're coming with?
+              </label>
+              <input
+                placeholder="Jane Doe"
+                className="rounded-full mt-1 h-[45px] w-full border-[#F8F1E8] text-[#F8F1E8] border-2 px-2 bg-inherit outline-none"
+              />
             </div>
 
             <div>
