@@ -1,10 +1,10 @@
-import React from "react";
 import Aadota from '../../assets/Àádọ́ta.png';
 import bg from "../../assets/bg.png";
+import { Link } from "react-router";
 
 const AadotaPage: React.FC = () => {
   return (
-    <div className="relative h-screen overflow-hidden bg-[#0d0f36] pt-10">
+    <div className="relative h-screen overflow-hidden bg-[#0d0f36] pt-12">
       {/* Main Content */}
       <div className="relative z-20 flex flex-col h-full">
         <div className="text-center px-5 mt-12">
@@ -18,9 +18,11 @@ const AadotaPage: React.FC = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
-          <button className="relative z-30 mt-8 px-6 py-2 text-base font-medium text-[#0d0f36] bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] rounded-full shadow-md hover:opacity-90 transition-all">
-            Register Now
-          </button>
+          <Link to="/register" style={{ textDecoration: "None"}}>
+            <button className="relative z-30 mt-8 px-6 py-2 text-base font-medium text-[#0d0f36] bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] rounded-full shadow-md hover:opacity-90 transition-all">
+              Register Now
+            </button>
+          </Link>
         </div>
       </div>
 
