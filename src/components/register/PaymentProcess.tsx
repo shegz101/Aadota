@@ -55,7 +55,7 @@ const PaymentProcess: React.FC = () => {
 
             <div className="text-center mt-5">
               <Link to="/registrationSuccessful" style={{ textDecoration: "None"}}>
-                <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-32 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
+                <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-48 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
                   <div className='flex justify-center rounded-full bg-gradient-to-b from-[#B46A11] via-[#D68D15] to-[#E7AC18] h-full w-full text-center items-center'>
                     Conclude Payment
                   </div>
