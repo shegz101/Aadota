@@ -27,7 +27,7 @@ const PaymentProcess: React.FC = () => {
         </div>
 
         <div className='small:mt-10 medium:mt-10 large:mt-10 larger:mt-14'>
-            <h1 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium font-voggiet small:text-2xl medium:text-2xl large:text-3xl larger:text-[40px]">Secure your Spot!</h1>
+            <h1 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium font-voggiet small:text-[30px] medium:text-[30px] large:text-[35px] larger:text-[40px]">Secure your Spot!</h1>
 
             <p className='pt-5 text-lg font-medium text-[#F8F1E8] font-clash'>
             Celebrate 50 golden years of innovation and leadership in style.
