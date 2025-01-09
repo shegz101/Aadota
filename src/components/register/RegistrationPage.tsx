@@ -184,7 +184,7 @@ const RegistrationPage: React.FC = () => {
                     <FaChevronDown className="text-[#F8F1E8]" />
                   </div>
                   {isOpen && (
-                    <ul className="absolute mt-2 w-full bg-[#1a1c50] border border-[#F8F1E8] z-10 text-[#F8F1E8] text-lg font-['Clash_Display'] text-center bg-white/10 backdrop-blur-lg py-2 rounded-[25px] shadow-lg border-white/20">
+                    <ul className="absolute mt-2 w-full bg-[#1a1c50] border border-[#F8F1E8] z-20 text-[#F8F1E8] text-lg font-['Clash_Display'] text-center bg-white/10 backdrop-blur-lg py-2 rounded-[25px] shadow-lg border-white/20">
                       {ticketTypes.map((ticket, index) => (
                         <li
                           key={index}
@@ -243,11 +243,11 @@ const RegistrationPage: React.FC = () => {
                   <button
                     type="submit"
                     disabled={loading} // Disable button while loading
-                    className={`relative mx-auto items-center text-center justify-center font-clash h-10 w-48 z-30 mt-5 px-[2.5px] py-[2.5px] text-base font-medium bg-[#E7AC18] text-[#1B1E4A] rounded-full shadow-md hover:opacity-90 transition-all ${
+                    className={`relative mx-auto items-center text-center justify-center font-clash h-10 w-48 mt-5 px-[2.5px] py-[2.5px] text-base font-medium bg-[#E7AC18] text-[#1B1E4A] rounded-full shadow-md hover:opacity-90 transition-all ${
                       loading ? 'opacity-70 cursor-not-allowed' : ''
                     }`}
                   >
-                    <div className='flex justify-center rounded-full bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] h-full w-full text-center items-center'>
+                    <div className='flex justify-center rounded-full bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] h-full w-full text-center z-30 items-center'>
                     {loading ? (
                       <div className="flex items-center justify-center">
                         <FaSpinner className="animate-spin mr-2" /> Processing...
