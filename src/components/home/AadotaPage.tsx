@@ -17,7 +17,7 @@ const AadotaPage: React.FC = () => {
         }}
       ></div>
 
-      <div className="z-30 flex flex-col h-full mx-auto top-50">
+      <div className="z-30 flex flex-col h-full mx-auto mt-28">
         <div className="text-center px-5 mt-12">
           <h1 className="mx-auto">
             <img src={Aadota} alt="Logo" className="w-full h-auto" />
@@ -31,7 +31,7 @@ const AadotaPage: React.FC = () => {
           </p>
           <Link to="/register" style={{ textDecoration: "None"}}>
             <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-36 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
-              <div className='flex justify-center rounded-full bg-gradient-to-b from-[#B46A11] via-[#D68D15] to-[#E7AC18] h-full w-full text-center items-center'>
+              <div className='flex justify-center rounded-full bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#E7AC18] h-full w-full text-center items-center'>
                 Register Now
               </div>
             </button>

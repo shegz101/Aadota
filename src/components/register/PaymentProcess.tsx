@@ -6,7 +6,7 @@ const PaymentProcess: React.FC = () => {
   const location = useLocation();
   const { ticketPrice } = location.state || {};
   return (
-    <div className="relative h-[120vh] overflow-hidden px-[12px] bg-[#0d0f36] pt-12">
+    <div className="relative h-screen overflow-hidden px-[12px] bg-[#0d0f36] pt-12 pb-10">
       {/* Radial Gradient Background */}
       <div
         className="absolute inset-0 z-10"
@@ -26,14 +26,14 @@ const PaymentProcess: React.FC = () => {
             </p>
         </div>
 
-        <div className='mt-10'>
-            <h1 className="text-[#FFFFFF] font-medium font-voggiet text-3xl">Secure your Spot!</h1>
+        <div className='mt-20'>
+            <h1 className="text-[#FFFFFF] pb-10 font-medium font-voggiet text-4xl">Secure your Spot!</h1>
 
-            <p className='pt-5 text-justify text-[#F8F1E8] font-clash'>
+            <p className='pt-5 text-center text-lg text-[#F8F1E8] font-clash'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipiscing 
             </p>
 
-            <hr className="my-5 w-full h-[1px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent border-0" />
+            <hr className="my-10 w-full h-[1px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent border-0" />
 
 
             {/* Payment Details */}

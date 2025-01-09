@@ -84,7 +84,7 @@ const RegistrationPage: React.FC = () => {
   return (
     <>
     <ToastContainer/>
-    <div className="relative h-[140vh] overflow-hidden px-[12px] bg-[#0d0f36] pt-12">
+    <div className="relative h-screen overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-12">
       <div
         className="absolute inset-0 z-10"
         style={{
@@ -98,14 +98,14 @@ const RegistrationPage: React.FC = () => {
       <div className="relative z-20 flex flex-col h-full">
         <div className="text-left w-[35vw]">
           <img src={logo} alt="Logo" />
-          <p className="text-[7.5px] pl-2 text-[#FFFFFF] mx-auto w-[35vw] mt-[-5px] font-clash">
+          <p className="text-[7.5px] w-[30vw] text-[#FFFFFF] mx-auto mt-[-5px] font-clash">
             Celebrating 50 Golden Years
           </p>
         </div>
 
         {/* Form */}
-        <div className="mt-10">
-          <h2 className="text-[#FFFFFF] font-medium tracking-[0.1em] font-voggiet text-3xl">
+        <div className="mt-20">
+          <h2 className="text-[#FFFFFF] pb-10 font-medium tracking-[0.1em] font-voggiet text-4xl">
             Are you ready?
           </h2>
 
@@ -235,7 +235,7 @@ const RegistrationPage: React.FC = () => {
                     name="suggestions"
                     as="textarea"
                     placeholder="Input your suggestions"
-                    className="rounded-[10px] mt-1 h-[70px] w-full border-[#FFFFFF] text-[#F8F1E8] border-2 px-2 outline-none bg-white/10 backdrop-blur-lg py-2 shadow-lg border-white/20"
+                    className="rounded-[26px] mt-1 h-[120px] w-full border-[#FFFFFF] text-[#F8F1E8] border-2 px-2 outline-none bg-white/10 backdrop-blur-lg py-2 shadow-lg border-white/20"
                   />
                 </div>
 
