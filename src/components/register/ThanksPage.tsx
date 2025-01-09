@@ -7,26 +7,26 @@ const ThanksPage: React.FC = () => {
       <div className='relative z-20 flex flex-col h-full'>
         <div className='text-left w-[35vw]'>
             <img src={logo} alt="Logo" className=''/>
-            <p className="text-[8px] text-[#FFFFFF] mx-auto w-[30vw] mt-[-5px] font-['Clash_Display']">
+            <p className="text-[7.5px] pl-2 text-[#FFFFFF] mx-auto w-[35vw] mt-[-5px] font-clash">
                 Celebrating 50 Golden Years
             </p>
         </div>
 
         <div className='text-center mt-10'>
-            <h1 className="text-[#FFFFFF] font-medium font-['Voggiet'] text-4xl">Get your Gele and Fila ready!</h1>
+            <h1 className="text-[#FFFFFF] font-medium font-voggiet text-4xl">Get your Gele and Fila ready!</h1>
 
             <hr className="my-5 w-full h-[1px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent border-0" />
 
-            <p className="text-[#F8F1E8] font-medium font-['Clash_Display']">
+            <p className="text-[#F8F1E8] font-medium font-clash">
             Get ready for Àádọ́ta, a dinner to celebrate 50 golden years of innovation and leadership. Bring you A game, ashoebi, and blah blah blah. 
             Your payment would be confirmed and your ticket would be sent to your email. 
             </p>
         </div>
         
         {/* Preorder Owo */}
-        <div className="text-[#F8F1E8] text-lg mt-14 font-['Clash_Display'] text-center bg-white/10 backdrop-blur-lg px-4 py-2 rounded-[25px] shadow-lg border border-white/20">
+        <div className="text-[#F8F1E8] text-lg mt-14 font-clash text-center bg-white/10 backdrop-blur-lg px-4 py-2 rounded-[25px] shadow-lg border border-white/20">
             <p>
-                P.S, Aadota bands is ready? As the saying goes, there is no owambe with owo!
+              P.S, Aadota bands is ready? As the saying goes, there is no owambe with owo!
             </p>
             <p>
                 <a

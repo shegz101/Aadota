@@ -1,38 +1,45 @@
 import Aadota from '../../assets/Àádọ́ta.png';
 import bg from "../../assets/newbg - Copy.png";
-// import grain from '../../assets/grainBg - Copy.png'
 import { Link } from "react-router";
 
 const AadotaPage: React.FC = () => {
   return (
-    <div className="relative h-screen overflow-hidden bg-[#0d0f36]">
-      
-      {/* Main Content */}
-      <div className="z-30 flex flex-col h-full pt-12">
+    <div className="sm:relative md:hidden h-screen overflow-hidden bg-[#0d0f36] pt-8">
+      {/* Radial Gradient Background */}
+      <div
+        className="absolute inset-0 z-10"
+        style={{
+          backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%, #0d0f36 100%), url('./assets/grainbg - Copy.png')`,
+          backgroundSize: 'cover', // Ensure the image covers the container
+          backgroundPosition: 'center', // Center the image
+          backgroundRepeat: 'no-repeat', // Avoid repeating the image
+          opacity: 1, // Adjust for transparency
+        }}
+      ></div>
+
+      <div className="z-30 flex flex-col h-full mx-auto top-50">
         <div className="text-center px-5 mt-12">
           <h1 className="mx-auto">
             <img src={Aadota} alt="Logo" className="w-full h-auto" />
           </h1>
-          <p className="text-sm text-[#FFFFFF] w-full mx-auto mt-[-5px] tracking-[0.2em] font-['Clash_Display']">
+          <p className="text-sm text-[#FFFFFF] w-full mx-auto mt-[-5px] tracking-[0.1em] font-clash">
             Celebrating 50 Golden Years
           </p>
-          <p className="text-base text-center mt-6 leading-relaxed text-gray-400 max-w-md mx-auto">
+          <p className="text-base text-center mt-6 leading-relaxed text-gray-400 max-w-md mx-auto font-clash">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
           <Link to="/register" style={{ textDecoration: "None"}}>
-            <button className="relative z-30 mt-8 px-6 py-2 text-base font-medium text-[#0d0f36] bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] rounded-full shadow-md hover:opacity-90 transition-all">
-              Register Now
+            <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-32 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-gradient-to-b from-[#B46A11] via-[#D68D15] to-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
+              <div className='flex justify-center rounded-full bg-gray-900 h-full w-full text-center items-center'>
+                Register Now
+              </div>
             </button>
           </Link>
         </div>
       </div>
 
-      {/* Background Image Container with Extended Gradient */}
-      <div className="absolute -bottom-10 left-0 right-0 w-full h-[60vh]">
-        {/* Extended Gradient Overlay */}
-        {/* <div className="absolute -top-20 inset-x-0 bottom-0 bg-gradient-to-b from-[#0d0f36] via-[#0d0f36]/70 to-transparent z-10"></div> */}
-        
+      <div className="absolute bottom-0 left-0 right-0 w-full h-[60vh]">
         
         {/* Background Image */}
         <img 
