@@ -1,8 +1,10 @@
-// import { Link } from 'react-router'
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router'
 import logo from '../../assets/Àádọ́ta.png'
 
 const PaymentProcess: React.FC = () => {
+  const location = useLocation();
+  const { ticketPrice } = location.state || {};
   return (
     <div className="relative h-[120vh] overflow-hidden px-[12px] bg-[#0d0f36] pt-12">
       {/* Radial Gradient Background */}
@@ -36,7 +38,7 @@ const PaymentProcess: React.FC = () => {
 
             {/* Payment Details */}
             <div className="space-y-1 text-[#F8F1E8] font-medium text-lg font-clash">
-                <p>Please pay the sum of 00000 to the account details below.</p>
+                <p>Please pay the sum of <span className="font-bold">{ticketPrice || '0000'}</span> to the account details below.</p>
                 <p>Account Name: Aminat Olorunkemi Giwa</p>
                 <p>Account Number: <span className='font-black'>1003348429</span></p>
                 <p>Bank: Lotus Bank</p>

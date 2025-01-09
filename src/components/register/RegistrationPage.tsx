@@ -69,7 +69,10 @@ const RegistrationPage: React.FC = () => {
       // Delay navigation by 3 seconds to show the toast notification
       setTimeout(() => {
         setLoading(false); 
-        navigate('/payment');
+        const selectedTicket = ticketTypes.find(
+          (ticket) => ticket.type === values.ticket_type
+        );
+        navigate('/payment', { state: { ticketPrice: selectedTicket?.price } });
       }, 3000); // 3000ms = 3 seconds
     } catch (error) {
       console.error(error);
