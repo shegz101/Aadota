@@ -84,7 +84,7 @@ const RegistrationPage: React.FC = () => {
   return (
     <>
     <ToastContainer/>
-    <div className="relative h-screen overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-12">
+    <div className="relative small:h-[120vh] larger:h-screen overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-12">
       <div
         className="absolute inset-0 z-10"
         style={{
@@ -98,14 +98,14 @@ const RegistrationPage: React.FC = () => {
       <div className="relative z-20 flex flex-col h-full">
         <div className="text-left w-[35vw]">
           <img src={logo} alt="Logo" />
-          <p className="text-[7.5px] w-[30vw] text-[#FFFFFF] mx-auto mt-[-5px] font-clash">
+          <p className="text-[7.5px] flex justify-center text-center text-[#FFFFFF] mt-[-5px] font-clash">
             Celebrating 50 Golden Years
           </p>
         </div>
 
         {/* Form */}
-        <div className="mt-20">
-          <h2 className="text-[#FFFFFF] pb-10 font-medium tracking-[0.1em] font-voggiet text-4xl">
+        <div className="small:mt-10 medium:mt-10 large:mt-10 larger:mt-14">
+          <h2 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium tracking-[0.1em] font-voggiet small:text-2xl medium:text-2xl large:text-3xl larger:text-4xl">
             Are you ready?
           </h2>
 
