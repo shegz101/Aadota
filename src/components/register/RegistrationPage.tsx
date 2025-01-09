@@ -15,11 +15,11 @@ const RegistrationPage: React.FC = () => {
   const [selectedTicket, setSelectedTicket] = useState<string | null>(null);
 
   const ticketTypes = [
-    { type: 'Single AIESECer', price: '₦15,000' },
-    { type: 'Guest', price: '₦17,500' },
-    { type: 'AIESEC Couple', price: '₦30,000' },
-    { type: 'Partial AIESEC Couple', price: '₦32,000' },
-    { type: 'Alumni', price: '₦20,000' },
+    { type: 'Idan (Single AIESECer)', price: '₦15,000' },
+    { type: 'Ọmọ̀ Jáyé Jáyé (Guest)', price: '₦17,500' },
+    { type: 'Ọbá àti olórí  (AIESEC Couple)', price: '₦30,000' },
+    { type: 'Ọbá àti olórí  (Partial AIESEC Couple)', price: '₦32,000' },
+    { type: 'Olówó Èkó (Alumni)', price: '₦20,000' },
   ];
 
   const initialValues = {
@@ -43,8 +43,8 @@ const RegistrationPage: React.FC = () => {
         function (value) {
           const { ticket_type } = this.parent;
           return (
-            ticket_type !== 'AIESEC Couple' &&
-            ticket_type !== 'Partial AIESEC Couple'
+            ticket_type !== 'Ọbá àti olórí  (AIESEC Couple)' &&
+            ticket_type !== 'Ọbá àti olórí  (Partial AIESEC Couple)'
           ) || !!value;
         }
       ),
@@ -84,7 +84,7 @@ const RegistrationPage: React.FC = () => {
   return (
     <>
     <ToastContainer/>
-    <div className="relative small:h-[120vh] larger:h-screen overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-12">
+    <div className="relative small:h-[120vh] larger:h-screen overflow-hidden px-[10px] bg-[#0d0f36] pt-12 pb-12">
       <div
         className="absolute inset-0 z-10"
         style={{
@@ -105,7 +105,7 @@ const RegistrationPage: React.FC = () => {
 
         {/* Form */}
         <div className="small:mt-10 medium:mt-10 large:mt-10 larger:mt-14">
-          <h2 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium tracking-[0.1em] font-voggiet small:text-2xl medium:text-2xl large:text-3xl larger:text-4xl">
+          <h2 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium tracking-[0.1em] font-voggiet small:text-2xl medium:text-2xl large:text-3xl larger:text-[40px]">
             Are you ready?
           </h2>
 
@@ -149,31 +149,6 @@ const RegistrationPage: React.FC = () => {
                   />
                 </div>
 
-                {/* <div>
-                  <label className="text-[#F8F1E8] text-sm font-semibold">
-                    Ticket Type
-                  </label>
-                  <Field
-                    as="select"
-                    name="ticket_type"
-                    className="rounded-full mt-1 h-[45px] w-full border-[#FFFFFF] text-[#F8F1E8] border-2 px-2 outline-none bg-white/10 backdrop-blur-lg py-2 shadow-lg border-white/20"
-                  >
-                    <option value="" disabled>
-                      Select your ticket type
-                    </option>
-                    {ticketTypes.map((ticket, index) => (
-                      <option key={index} value={ticket.type}>
-                        {ticket.type} - {ticket.price}
-                      </option>
-                    ))}
-                  </Field>
-                  <ErrorMessage
-                    name="ticket_type"
-                    component="div"
-                    className="text-red-500 text-sm mt-1"
-                  />
-                </div> */}
-
                 <div className="relative">
                   <label className="text-[#F8F1E8] text-sm font-semibold">Ticket Type</label>
                   <div
@@ -195,7 +170,7 @@ const RegistrationPage: React.FC = () => {
                             setIsOpen(false);
                           }}
                         >
-                          <span>{ticket.type}</span>
+                          <span className='text-left'>{ticket.type}</span>
                           <span>{ticket.price}</span>
                         </li>
                       ))}
@@ -208,8 +183,8 @@ const RegistrationPage: React.FC = () => {
                   />
                 </div>
 
-                {values.ticket_type === 'AIESEC Couple' ||
-                values.ticket_type === 'Partial AIESEC Couple' ? (
+                {values.ticket_type === 'Ọbá àti olórí  (AIESEC Couple)' ||
+                values.ticket_type === 'Ọbá àti olórí  (Partial AIESEC Couple)' ? (
                   <div>
                     <label className="text-[#F8F1E8] text-sm font-semibold">
                       Name of the person you're coming with?

@@ -25,9 +25,10 @@ const AadotaPage: React.FC = () => {
           <p className="text-sm text-[#FFFFFF] flex justify-center text-center mt-[-5px] tracking-[0.1em] font-clash">
             Celebrating 50 Golden Years
           </p>
-          <p className="text-base text-center mt-6 leading-relaxed text-gray-400 max-w-md mx-auto font-clash">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          <p className="text-base text-center mt-6 leading-relaxed text-[#F8F1E8] max-w-md mx-auto font-clash">
+          Half a century of leadership, excellence, and impact.
+          It’s time to jubilee-ate with us!. 
+          Let’s celebrate 50 golden years and make history together!
           </p>
           <Link to="/register" style={{ textDecoration: "None"}}>
             <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-36 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
