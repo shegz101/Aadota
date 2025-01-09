@@ -105,7 +105,7 @@ const RegistrationPage: React.FC = () => {
 
         {/* Form */}
         <div className="mt-10">
-          <h2 className="text-[#FFFFFF] font-medium tracking-[0.1em] font-voggiet text-2xl">
+          <h2 className="text-[#FFFFFF] font-medium tracking-[0.1em] font-voggiet text-3xl">
             Are you ready?
           </h2>
 
@@ -243,10 +243,11 @@ const RegistrationPage: React.FC = () => {
                   <button
                     type="submit"
                     disabled={loading} // Disable button while loading
-                    className={`relative font-clash mt-5 px-6 py-2 text-base font-medium text-[#1B1E4A] bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] rounded-full shadow-md hover:opacity-90 transition-all ${
+                    className={`relative mx-auto items-center text-center justify-center font-clash h-10 w-48 z-30 mt-5 px-[2.5px] py-[2.5px] text-base font-medium bg-[#E7AC18] text-[#1B1E4A] rounded-full shadow-md hover:opacity-90 transition-all ${
                       loading ? 'opacity-70 cursor-not-allowed' : ''
                     }`}
                   >
+                    <div className='flex justify-center rounded-full bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] h-full w-full text-center items-center'>
                     {loading ? (
                       <div className="flex items-center justify-center">
                         <FaSpinner className="animate-spin mr-2" /> Processing...
@@ -254,6 +255,7 @@ const RegistrationPage: React.FC = () => {
                     ) : (
                       'Proceed to Payment'
                     )}
+                    </div>
                   </button>
                 </div>
               </Form>

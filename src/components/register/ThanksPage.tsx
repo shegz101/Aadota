@@ -18,7 +18,7 @@ const ThanksPage: React.FC = () => {
             <hr className="my-5 w-full h-[1px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent border-0" />
 
             <p className="text-[#F8F1E8] font-medium font-clash">
-            Get ready for Àádọ́ta, a dinner to celebrate 50 golden years of innovation and leadership. Bring you A game, ashoebi, and blah blah blah. 
+            Get ready for Àádọ́ta, a dinner to celebrate 50 golden years of innovation and leadership. Bring your A game, ashoebi, and blah blah blah. 
             Your payment would be confirmed and your ticket would be sent to your email. 
             </p>
         </div>

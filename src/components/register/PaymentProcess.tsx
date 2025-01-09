@@ -54,11 +54,13 @@ const PaymentProcess: React.FC = () => {
             </div>
 
             <div className="text-center mt-5">
-                <Link to="/registrationSuccessful" style={{ textDecoration: "None"}}>
-                    <button className="relative z-30 mt-5 px-6 py-2 text-base font-medium font-clash text-[#1B1E4A] bg-gradient-to-r from-[#B46A11] via-[#D68D15] to-[#FBF491] rounded-full shadow-md hover:opacity-90 transition-all">
-                        Conclude Payment
-                    </button>
-                </Link>
+              <Link to="/registrationSuccessful" style={{ textDecoration: "None"}}>
+                <button type="button" className="relative mx-auto items-center text-center justify-center h-10 w-32 z-30 mt-6 px-[2.5px] py-[2.5px] text-base font-medium font-clash text-[#1B1E4A] bg-[#E7AC18] rounded-full shadow-md hover:opacity-90 transition-all">
+                  <div className='flex justify-center rounded-full bg-gradient-to-b from-[#B46A11] via-[#D68D15] to-[#E7AC18] h-full w-full text-center items-center'>
+                    Conclude Payment
+                  </div>
+                </button>   
+              </Link>
             </div>
         </div>
       </div>
