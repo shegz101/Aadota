@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const AadotaPage: React.FC = () => {
   return (
-    <div className="sm:relative md:hidden h-screen overflow-hidden bg-[#0d0f36] pt-8">
+    <div className="sm:relative md:hidden h-screen overflow-hidden bg-[#0d0f36]">
       {/* Radial Gradient Background */}
       <div
         className="absolute inset-0 z-10"
@@ -17,12 +17,12 @@ const AadotaPage: React.FC = () => {
         }}
       ></div>
 
-      <div className="z-30 flex flex-col h-full mx-auto mt-28">
-        <div className="text-center px-5 mt-12">
+      <div className="z-30 flex flex-col h-full mx-auto small:mt-14 medium:mt-16 large:mt-28 larger:mt-52">
+        <div className="text-center px-5">
           <h1 className="mx-auto">
             <img src={Aadota} alt="Logo" className="w-full h-auto" />
           </h1>
-          <p className="text-sm text-[#FFFFFF] w-full mx-auto mt-[-5px] tracking-[0.1em] font-clash">
+          <p className="text-sm text-[#FFFFFF] flex justify-center text-center mt-[-5px] tracking-[0.1em] font-clash">
             Celebrating 50 Golden Years
           </p>
           <p className="text-base text-center mt-6 leading-relaxed text-gray-400 max-w-md mx-auto font-clash">
