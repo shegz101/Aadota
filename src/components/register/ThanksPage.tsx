@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const ThanksPage: React.FC = () => {
   return (
-    <div className="relative small:h-[130vh] medium:h-[130vh] large:h-[120vh] larger:h-[110vh] overflow-hidden px-[14px] bg-[#0d0f36] pt-10">
+    <div className="relative small:h-[130vh] medium:h-[120vh] large:h-[120vh] larger:h-[110vh] overflow-hidden px-[14px] bg-[#0d0f36] pt-10">
       <div className='relative z-20 flex flex-col h-full'>
         <Link to="/" style={{ textDecoration: "None"}}>
           <div className='text-left w-[35vw]'>
