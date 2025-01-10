@@ -3,30 +3,32 @@ import bg from "../../assets/moneybg.png";
 
 const ThanksPage: React.FC = () => {
   return (
-    <div className="relative h-screen overflow-hidden px-[12px] bg-[#0d0f36] pt-12">
+    <div className="relative small:h-[130vh] medium:h-[130vh] large:h-[120vh] larger:h-[110vh] overflow-hidden px-[14px] bg-[#0d0f36] pt-10">
       <div className='relative z-20 flex flex-col h-full'>
         <div className='text-left w-[35vw]'>
             <img src={logo} alt="Logo" className=''/>
-            <p className="text-[7.5px] pl-2 text-[#FFFFFF] mx-auto w-[35vw] mt-[-5px] font-clash">
+            <p className="text-[7.5px] text-[#FFFFFF] flex justify-center text-center mt-[-5px] font-clash">
                 Celebrating 50 Golden Years
             </p>
         </div>
 
-        <div className='text-center mt-24'>
-            <h1 className="text-[#FFFFFF] font-medium font-voggiet text-4xl">Get your Gele and Fila ready!</h1>
+        <div className='text-center small:mt-10 medium:mt-10 large:mt-10 larger:mt-14'>
+            <h1 className="text-[#FFFFFF] font-medium font-voggiet small:text-[25px] medium:text-[30px] large:text-[35px] larger:text-[40px]">Get your Gele and Fila ready!</h1>
 
             <hr className="my-5 w-full h-[1px] bg-gradient-to-r from-transparent via-[#FFD700] to-transparent border-0" />
 
             <p className="text-[#F8F1E8] font-medium font-clash text-center">
-            Get ready for Àádọ́ta, a dinner to celebrate 50 golden years of innovation and leadership. Bring your A game, ashoebi, and blah blah blah. 
+            It’s time to bring your A-game to the most epic dinner of the year— Àádọta!
+            I can already picture you slaying in that aso-ebi.
+            Lagos won’t know what hit it!
             Your payment would be confirmed and your ticket would be sent to your email. 
             </p>
         </div>
         
         {/* Preorder Owo */}
-        <div className="text-[#F8F1E8] text-lg mt-20 font-clash text-center bg-white/10 backdrop-blur-lg px-4 py-2 rounded-[25px] shadow-lg border border-white/20">
+        <div className="text-[#F8F1E8] text-lg small:mt-8 medium:mt-10 large:mt-14 larger:mt-20 font-clash text-center bg-white/10 backdrop-blur-lg px-4 py-2 rounded-[25px] shadow-lg border border-white/20">
             <p>
-              P.S, Aadota bands is ready? As the saying goes, there is no owambe with owo!
+              P.S, Aadota bands is ready? As the saying goes, there is no owambe without owo!
             </p>
             <p>
                 <a
