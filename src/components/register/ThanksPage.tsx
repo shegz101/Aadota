@@ -1,17 +1,20 @@
 import logo from '../../assets/Àádọ́ta.png'
 import bg from "../../assets/moneybg.png";
+import { Link } from 'react-router';
 
 const ThanksPage: React.FC = () => {
   return (
     <div className="relative small:h-[130vh] medium:h-[130vh] large:h-[120vh] larger:h-[110vh] overflow-hidden px-[14px] bg-[#0d0f36] pt-10">
       <div className='relative z-20 flex flex-col h-full'>
-        <div className='text-left w-[35vw]'>
-            <img src={logo} alt="Logo" className=''/>
+        <Link to="/" style={{ textDecoration: "None"}}>
+          <div className='text-left w-[35vw]'>
+            <img src={logo} alt="Logo"/>
             <p className="text-[7.5px] text-[#FFFFFF] flex justify-center text-center mt-[-5px] font-clash">
                 Celebrating 50 Golden Years
             </p>
-        </div>
-
+          </div>
+        </Link>
+        
         <div className='text-center small:mt-10 medium:mt-10 large:mt-10 larger:mt-14'>
             <h1 className="text-[#FFFFFF] font-medium font-voggiet small:text-[25px] medium:text-[30px] large:text-[35px] larger:text-[40px]">Get your Gele and Fila ready!</h1>
 

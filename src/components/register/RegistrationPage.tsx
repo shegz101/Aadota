@@ -1,5 +1,5 @@
 import { FaSpinner } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/Àádọ́ta.png';
 import { FaChevronDown } from 'react-icons/fa';
 import { useState } from 'react';
@@ -96,12 +96,14 @@ const RegistrationPage: React.FC = () => {
         }}
       ></div>
       <div className="relative z-20 flex flex-col h-full">
-        <div className="text-left w-[35vw]">
-          <img src={logo} alt="Logo" />
-          <p className="text-[7.5px] flex justify-center text-center text-[#FFFFFF] mt-[-5px] font-clash">
-            Celebrating 50 Golden Years
-          </p>
-        </div>
+        <Link to="/" style={{ textDecoration: "None"}}>
+          <div className="text-left w-[35vw]">
+            <img src={logo} alt="Logo" />
+            <p className="text-[7.5px] flex justify-center text-center text-[#FFFFFF] mt-[-5px] font-clash">
+              Celebrating 50 Golden Years
+            </p>
+          </div>
+        </Link>
 
         {/* Form */}
         <div className="small:mt-10 medium:mt-10 large:mt-10 larger:mt-14">

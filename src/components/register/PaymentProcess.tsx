@@ -19,13 +19,15 @@ const PaymentProcess: React.FC = () => {
         }}
       ></div>
       <div className='relative z-20 flex flex-col h-full'>
-        <div className='text-left w-[35vw]'>
+        <Link to="/" style={{ textDecoration: "None"}}>
+          <div className='text-left w-[35vw]'>
             <img src={logo} alt="Logo" className=''/>
             <p className="text-[7.5px] pl-2 text-[#FFFFFF] mx-auto w-[35vw] mt-[-5px] font-clash">
               Celebrating 50 Golden Years
             </p>
-        </div>
-
+          </div>
+        </Link>
+        
         <div className='small:mt-10 medium:mt-10 large:mt-10 larger:mt-14'>
             <h1 className="text-[#FFFFFF] small:pb-2 medium:pb-4 large:pb-6 larger:pb-8 font-medium font-voggiet small:text-[25px] medium:text-[30px] large:text-[35px] larger:text-[40px]">Secure your Spot!</h1>
 
