@@ -17,7 +17,7 @@ const AadotaPage: React.FC = () => {
         }}
       ></div>
 
-      <div className="z-30 flex flex-col h-full mx-auto small:mt-14 medium:mt-16 large:mt-28 larger:mt-52">
+      <div className="z-30 flex flex-col h-full mx-auto small:mt-14 medium:mt-14 large:mt-14 larger:mt-24">
         <div className="text-center px-5">
           <h1 className="mx-auto">
             <img src={Aadota} alt="Logo" className="w-full h-auto" />
