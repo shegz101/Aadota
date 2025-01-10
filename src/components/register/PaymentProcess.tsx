@@ -6,7 +6,7 @@ const PaymentProcess: React.FC = () => {
   const location = useLocation();
   const { ticketPrice } = location.state || {};
   return (
-    <div className="relative small:h-[110vh] larger:h-screen overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-10">
+    <div className="relative overflow-hidden px-[16px] bg-[#0d0f36] pt-12 pb-10">
       {/* Radial Gradient Background */}
       <div
         className="absolute inset-0 z-10"

@@ -84,7 +84,7 @@ const RegistrationPage: React.FC = () => {
   return (
     <>
     <ToastContainer/>
-    <div className="relative small:h-[135vh] medium:h-[135vh] large:h-[130vh] larger:h-screen overflow-hidden px-[10px] bg-[#0d0f36] pt-12 pb-12">
+    <div className="relative overflow-hidden px-[10px] bg-[#0d0f36] pt-12 pb-12">
       <div
         className="absolute inset-0 z-10"
         style={{
