@@ -31,7 +31,7 @@ const ThanksPage: React.FC = () => {
         {/* Preorder Owo */}
         <div className="text-[#F8F1E8] text-lg small:mt-8 medium:mt-10 large:mt-14 larger:mt-20 font-clash text-center bg-white/10 backdrop-blur-lg px-4 py-2 rounded-[25px] shadow-lg border border-white/20">
             <p>
-              P.S, Aadota bands is ready? As the saying goes, there is no owambe without owo!
+            P.S, As the saying goes, there is no owambe with Owó! Want to spray some Àádọ́ta bands in style?
             </p>
             <p>
                 <a
