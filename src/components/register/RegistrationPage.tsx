@@ -54,7 +54,7 @@ const RegistrationPage: React.FC = () => {
   const onSubmit = async (values: typeof initialValues, { resetForm }: any) => {
     setLoading(true);
     try {
-      await axios.post('https://ain-backend.fly.dev/api/ail-dinner/register', {
+      await axios.post('https://ain-backend.onrender.com/api/ail-dinner/register', {
         name: values.name,
         email: values.email,
         ticket_type: values.ticket_type,
@@ -239,6 +239,10 @@ const RegistrationPage: React.FC = () => {
             )}
           </Formik>
         </div>
+
+        <Link to="/payment">
+          <p className='text-[#FFBB00] text-center underline font-clash pt-5'>Registered Already? Click here to continue</p>
+        </Link>
       </div>
     </div>
     </>
