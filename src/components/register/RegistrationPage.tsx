@@ -240,9 +240,9 @@ const RegistrationPage: React.FC = () => {
           </Formik>
         </div>
 
-        <Link to="/payment">
+        {/* <Link to="/payment">
           <p className='text-[#FFBB00] text-center underline font-clash pt-5'>Registered Already? Click here to continue</p>
-        </Link>
+        </Link> */}
       </div>
     </div>
     </>
